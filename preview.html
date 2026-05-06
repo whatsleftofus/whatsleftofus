@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsLeftOfUs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b0f0c;
+      color: #e6e6e6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center center/cover;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.65);
+    }
+
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 4px;
+      z-index: 1;
+    }
+
+    header p {
+      z-index: 1;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-left: 3px solid #4caf50;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #121815;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #1f2a22;
+    }
+
+    .card:hover {
+      border-color: #4caf50;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #4caf50;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>WHATSLEFTOFUS</h1>
+  <p>Live hidden. Stay ready.</p>
+</header>
+
+<section>
+  <h2>Survival Systems</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Field Survival</h3>
+      <p>Stealth camping, fire control, forest movement, concealment.</p>
+      <a class="button" href="#">Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Food Independence</h3>
+      <p>Fruit trees, survival gardening, permaculture basics.</p>
+      <a class="button" href="#">Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Water Systems</h3>
+      <p>Rain collection, filtration, storage methods.</p>
+      <a class="button" href="#">Guide</a>
+    </div>
+
+    <div class="card">
+      <h3>Primitive Skills</h3>
+      <p>Wood carving, tools, bushcraft essentials.</p>
+      <a class="button" href="#">Guide</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Free Survival PDF</h2>
+
+  <div class="card">
+    <h3>72h Forest Survival Guide</h3>
+    <p>How to survive 3 days in the wild: water, fire, stealth.</p>
+    <a class="button" href="pdf/guide1.pdf" download>Download PDF</a>
+  </div>
+
+</section>
+
+<section>
+  <h2>About</h2>
+  <p>
+    WhatsLeftOfUs is a survival knowledge system focused on off-grid living,
+    self-reliance, and primitive skills. Built for those who choose independence
+    from modern systems.
+  </p>
+</section>
+
+<footer>
+  WhatsLeftOfUs © 2026
+</footer>
+
+</body>
+</html>
